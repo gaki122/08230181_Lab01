@@ -10,7 +10,7 @@ color: #333; /* Sets the text color to a dark grey */
 /* Topbar */
 .topbar {
 /* Styles the top navigation bar */
-background:#35888b; /* Blue background */
+background:#246e89; /* Blue background */
 color: #fff; /* White text color */
 padding: 0.1em; /* Very small space around content. Padding is inner space. */
 width: 100%; /* Full width of the viewport */
@@ -79,10 +79,10 @@ font-weight: bold; /* Bold text */
 
 .banner {
 /* Styles the horizontal banner for announcements */
-background-color: #35888b; /* Dark blue background */
+background-color: #246e89; /* Dark blue background */
 color: white; /* White text */
 text-align: center; /* Centers text horizontally */
-padding: 0.5em; /* Padding inside banner */
+padding: 0.1em; /* Padding inside banner */
 font-weight: bold; /* Makes text bold */
 }
 
@@ -110,7 +110,7 @@ text-align: justify; /* Justifies text (aligns left and right) */
 .btn-red {
 background-color: #e21c33;
 color: #fff;
-padding: 1em 2em;
+padding: 0.5em 1em;
 border-radius: 2px;
 text-decoration: none;
 font-weight: bold;
@@ -137,7 +137,7 @@ font-weight: bold;
 }
 
 .breadcrumb a {
-    color: #35888b; /* Blue color for links */
+    color: #2c2c2c; /* Blue color for links */
     text-decoration: none;
 }
 
@@ -238,3 +238,20 @@ width: 100%; /* Full width of the viewport */
     font-weight: normal; /* prevent bold effect */
 }
 
+
+/* Define the animation */
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%); /* Start from the far right */
+  }
+  to {
+    transform: translateX(-100%); /* Move to the far left */
+  }
+}
+
+/* Apply the animation to the text element */
+.scroll-text {
+    /* Existing styles for the text */
+    white-space: nowrap; /* Ensures text stays on one line */
+    animation: scroll-left 15s linear infinite; /* Apply the animation */
+}
